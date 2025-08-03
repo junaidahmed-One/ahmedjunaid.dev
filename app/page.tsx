@@ -1,11 +1,11 @@
-import { Github, X, Linkedin, Instagram, Mail } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import ThemeToggle from "@/components/theme-toggle"
-import WorkExperience from "@/components/work-experience"
-import StartupWorkSection from "@/components/startup-work"
-import Projects from "@/components/projects"
-import ThemeIndicator from "@/components/theme-indicator"
+import { Github, X, Linkedin, Instagram, Mail } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import ThemeToggle from "@/components/theme-toggle";
+import WorkExperience from "@/components/work-experience";
+import StartupWorkSection from "@/components/startup-work";
+import Projects from "@/components/projects";
+import ThemeIndicator from "@/components/theme-indicator";
 
 export default function Portfolio() {
   return (
@@ -26,9 +26,6 @@ export default function Portfolio() {
             <Link href="#blog" className="text-sm hover:text-foreground/80">
               Blog
             </Link>
-            <Link href="#photos" className="text-sm hover:text-foreground/80">
-              Photos
-            </Link>
           </nav>
           <ThemeToggle />
         </div>
@@ -39,61 +36,98 @@ export default function Portfolio() {
         <section className="mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Software engineer, Web Developer
                 <br />& tech enthusiast
               </h1>
               <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-                I'm a fullstack developer with 3+ years of experience, passionate about building scalable applications
-                and contributing to open-source projects that benefit developers and the world at large.
+                Hi 👋 I’m Junaid Ahmed — a full-stack developer passionate about
+                building scalable applications and continually exploring the
+                evolving world of technology.
               </p>
 
               {/* Social Links */}
               <div className="flex flex-wrap gap-4 mb-6">
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   <Github className="w-4 h-4" />
                   GitHub
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   <X className="w-4 h-4" />X
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   <Instagram className="w-4 h-4" />
                   Instagram
                 </Link>
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   <Mail className="w-4 h-4" />
                   Steam
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Unsplash
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Youtube
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Daily.dev
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   ProductHunt
                 </Link>
               </div>
 
               <div className="flex flex-wrap gap-4 mt-4">
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Stackoverflow
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Codewars
                 </Link>
-                <Link href="#" className="flex items-center gap-2 text-sm hover:text-foreground/80">
+                <Link
+                  href="#"
+                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
+                >
                   Gitlab
                 </Link>
               </div>
@@ -163,5 +197,5 @@ export default function Portfolio() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
