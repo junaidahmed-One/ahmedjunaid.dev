@@ -8,33 +8,12 @@ import Projects from "@/components/projects";
 import ThemeIndicator from "@/components/theme-indicator";
 import { socialLinks } from "@/data/links";
 import TypingEffect from "@/components/typing-effect";
+import SiteHeader from "@/components/site-header";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center">
-            <Link href="/">
-              <span className="text-background font-bold text-sm">JA</span>
-            </Link>
-          </div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-sm hover:text-foreground/80">
-              About
-            </Link>
-            <Link href="#projects" className="text-sm hover:text-foreground/80">
-              Projects
-            </Link>
-            <Link href="/blogs" className="text-sm hover:text-foreground/80">
-              Blogs
-            </Link>
-          </nav>
-          <ThemeToggle />
-        </div>
-      </header>
-
+    <>
+      <SiteHeader />
       <main className="max-w-6xl mx-auto px-4 py-16">
         {/* Hero Section */}
         <section className="mb-16">
@@ -158,6 +137,6 @@ export default function Portfolio() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

@@ -2,36 +2,12 @@ import { Mail, ArrowLeft, BookOpen } from "lucide-react";
 import Link from "next/link";
 import ThemeToggle from "@/components/theme-toggle";
 import BlogSection from "@/components/blog-section";
+import SiteHeader from "@/components/site-header";
 
 export default function BlogsPage() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center">
-            <Link href="/">
-              <span className="text-background font-bold text-sm">JA</span>
-            </Link>
-          </div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/#about" className="text-sm hover:text-foreground/80">
-              About
-            </Link>
-            <Link href="/projects" className="text-sm hover:text-foreground/80">
-              Projects
-            </Link>
-            <Link
-              href="/blogs"
-              className="text-sm hover:text-foreground/80 font-semibold"
-            >
-              Blogs
-            </Link>
-          </nav>
-          <ThemeToggle />
-        </div>
-      </header>
-
+    <>
+      <SiteHeader />
       <main className="max-w-6xl mx-auto px-4 py-16">
         {/* Page Header */}
         <div className="mb-12">
@@ -114,6 +90,6 @@ export default function BlogsPage() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
