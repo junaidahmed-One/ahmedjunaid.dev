@@ -7,6 +7,7 @@ import StartupWorkSection from "@/components/startup-work";
 import Projects from "@/components/projects";
 import ThemeIndicator from "@/components/theme-indicator";
 import { socialLinks } from "@/data/links";
+import TypingEffect from "@/components/typing-effect";
 
 export default function Portfolio() {
   return (
@@ -15,7 +16,9 @@ export default function Portfolio() {
       <header className="border-b">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center">
-            <span className="text-background font-bold text-sm">A</span>
+            <Link href="/">
+              <span className="text-background font-bold text-sm">JA</span>
+            </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#about" className="text-sm hover:text-foreground/80">
@@ -24,8 +27,8 @@ export default function Portfolio() {
             <Link href="#projects" className="text-sm hover:text-foreground/80">
               Projects
             </Link>
-            <Link href="#blog" className="text-sm hover:text-foreground/80">
-              Blog
+            <Link href="/blogs" className="text-sm hover:text-foreground/80">
+              Blogs
             </Link>
           </nav>
           <ThemeToggle />
@@ -38,8 +41,13 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight italic">
-                Software engineer, Web Developer
-                <br />& tech enthusiast
+                Software engineer,{" "}
+                <TypingEffect
+                  text="Web Developer & tech enthusiast"
+                  speed={80}
+                  delay={1000}
+                  className="text-primary"
+                />
               </h1>
               <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
                 Hi 👋 I’m Junaid Ahmed — a full-stack developer passionate about
@@ -58,6 +66,7 @@ export default function Portfolio() {
                     alt="github"
                     width={24}
                     height={24}
+                    className="dark:bg-white"
                   />
                   Github
                 </Link>
@@ -70,6 +79,7 @@ export default function Portfolio() {
                     alt="twitter"
                     width={24}
                     height={24}
+                    className="dark:bg-white"
                   />
                   X.com
                 </Link>
@@ -108,8 +118,8 @@ export default function Portfolio() {
                   <Image
                     src="/images/pfprofile_picture.jpeg"
                     alt="Profile picture"
-                    width={360}
-                    height={360}
+                    width={420}
+                    height={420}
                     className="rounded-2xl object-cover border-4 border-background shadow-2xl hover:scale-105 transition-transform duration-300"
                     priority
                   />

@@ -71,7 +71,7 @@ export const workExperiences: WorkExperience[] = [
     duration: "JULY 2022 - SEP 2024",
     description:
       "At Bristlecone, as Software Developer Built and maintained integration adapters and REST APIs for Oracle Integration Cloud, enhancing connectivity and critical bug fixes",
-    logoUrl: "/icons/bristlecone_logo.svg",
+    logoUrl: "/images/bcone.svg",
     color: "from-orange-400 to-red-500",
   },
 ];
@@ -240,8 +240,37 @@ export const projects: Project[] = [
           "bg-white-100 text-yellow-800 dark:bg-white dark:text-yellow-800",
       },
     ],
-    liveDemo: "#",
-    sourceCode: "#",
+    sourceCode: "https://github.com/junaidahmed-One/wc-tool",
+  },
+  {
+    id: "paytm-wallet",
+    title: "Paytm-Wallet",
+    description:
+      "PayTM wallet like app using mongodb, react and Express. Learn about transactions in databases which are essential for an app",
+    image: "/placeholder.svg?height=400&width=800&text=E-Commerce",
+    technologies: [
+      {
+        name: "React",
+        icon: "⚛️",
+        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+      },
+      {
+        name: "TypeScript",
+        icon: "📘",
+        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+      },
+      {
+        name: "Tailwind",
+        icon: "🎨",
+        color: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200",
+      },
+      {
+        name: "Shadcn",
+        icon: "✏️",
+        color: "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
+      },
+    ],
+    sourceCode: "https://github.com/junaidahmed-One/Paytm-Wallet",
   },
 ];
 
