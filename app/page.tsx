@@ -37,7 +37,7 @@ export default function Portfolio() {
         <section className="mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight italic">
                 Software engineer, Web Developer
                 <br />& tech enthusiast
               </h1>
@@ -128,11 +128,11 @@ export default function Portfolio() {
         {/* Contact */}
         <section className="text-center">
           <Link
-            href="mailto:your.email@gmail.com"
+            href="mailto:junaidcom0065@gmail.com"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground"
           >
             <Mail className="w-4 h-4" />
-            your.email@gmail.com
+            junaidcom0065@gmail.com
           </Link>
         </section>
 

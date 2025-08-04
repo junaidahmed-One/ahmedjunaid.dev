@@ -131,10 +131,6 @@
   }
 }
 
-.font-modak {
-  font-family: var(--font-modak);
-}
-
 /* Smooth theme transitions */
 * {
   transition-property: background-color, border-color, color, fill, stroke;

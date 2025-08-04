@@ -99,16 +99,16 @@ export const startupWork: StartupWork[] = [
 
 export const projects: Project[] = [
   {
-    id: "tribe",
-    title: "TRIBE",
+    id: "ai-learning-companion",
+    title: "AI Learning Companion",
     description:
-      "TRIBE is a community app inspired by Skool, where users can create or join communities, share posts, like them, comment on them, and chat in real time with other users.",
-    image: "/images/project-tribe.png",
+      "Converso is a real-time, voice-first AI teaching platform built with Next.js. It allows users to create personalized learning Companions—AI tutors tailored to specific subjects and topics. Engage in natural, interactive voice conversations to master new concepts in a fun and effective way.",
+    image: "/images/ai-project.svg",
     technologies: [
       {
-        name: "React",
-        icon: "⚛️",
-        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+        name: "Next.js",
+        icon: "⚡",
+        color: "bg-black text-white dark:bg-white dark:text-black",
       },
       {
         name: "TypeScript",
@@ -116,25 +116,15 @@ export const projects: Project[] = [
         color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
       },
       {
-        name: "Tailwind",
-        icon: "🎨",
-        color: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200",
-      },
-      {
-        name: "Shadcn",
-        icon: "✏️",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
-      },
-      {
-        name: "Cypress",
-        icon: "🌲",
+        name: "Vapi AI",
+        icon: "🤖",
         color:
           "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
       },
       {
-        name: "Pocketbase",
-        icon: "🗄️",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
+        name: "Supabase",
+        icon: "⚡",
+        color: "bg-black-800 text-green-800 dark:bg-white dark:text-green-700",
       },
       {
         name: "Tanstack Router",
@@ -149,16 +139,15 @@ export const projects: Project[] = [
           "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
       },
     ],
-    liveDemo: "#",
-    sourceCode: "#",
-    watchVideo: "#",
+    liveDemo: "https://ai-learning-companion-nine.vercel.app/",
+    sourceCode: "https://github.com/junaidahmed-One/ai-learning-companion",
   },
   {
-    id: "ecommerce-platform",
-    title: "E-Commerce Platform",
+    id: "mgc",
+    title: "Mouthguard Company",
     description:
-      "A full-stack e-commerce platform built with Next.js and Node.js, featuring user authentication, payment processing, and admin dashboard for managing products and orders.",
-    image: "/placeholder.svg?height=400&width=800&text=E-Commerce",
+      "Developed a fully responsive e-commerce website for MouthGuard Company, enabling customers to browse, customize, and purchase dental protection products online.",
+    image: "/images/mgc_web.svg",
     technologies: [
       {
         name: "Next.js",
@@ -188,88 +177,15 @@ export const projects: Project[] = [
         color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
       },
     ],
-    liveDemo: "#",
-    sourceCode: "#",
+    liveDemo: "https://mouthguardcompany.com",
+    watchVideo: "https://www.instagram.com/mouthguard_company",
   },
   {
-    id: "task-management",
-    title: "Task Management App",
+    id: "petcare",
+    title: "Pet care",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Java Spring Boot.",
-    image: "/placeholder.svg?height=400&width=800&text=Task+Management",
-    technologies: [
-      {
-        name: "React",
-        icon: "⚛️",
-        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-      },
-      {
-        name: "Java",
-        icon: "☕",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
-      },
-      {
-        name: "Spring Boot",
-        icon: "🍃",
-        color:
-          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
-      },
-      {
-        name: "WebSocket",
-        icon: "🔌",
-        color:
-          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
-      },
-      {
-        name: "MySQL",
-        icon: "🗃️",
-        color:
-          "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
-      },
-    ],
-    liveDemo: "#",
-    sourceCode: "#",
-    watchVideo: "#",
-  },
-  {
-    id: "weather-app",
-    title: "Weather Dashboard",
-    description:
-      "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics built with React and OpenWeather API.",
-    image: "/placeholder.svg?height=400&width=800&text=Weather+App",
-    technologies: [
-      {
-        name: "React",
-        icon: "⚛️",
-        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-      },
-      {
-        name: "TypeScript",
-        icon: "📘",
-        color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-      },
-      {
-        name: "Chart.js",
-        icon: "📊",
-        color:
-          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
-      },
-      {
-        name: "OpenWeather API",
-        icon: "🌤️",
-        color:
-          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
-      },
-    ],
-    liveDemo: "#",
-    sourceCode: "#",
-  },
-  {
-    id: "blog-platform",
-    title: "Personal Blog Platform",
-    description:
-      "A modern blog platform with markdown support, comment system, and SEO optimization built with Next.js and Contentful CMS.",
-    image: "/placeholder.svg?height=400&width=800&text=Blog+Platform",
+      "Discover the ultimate pet care platform that combines top-notch services and premium pet food.",
+    image: "/images/petcare_project.svg",
     technologies: [
       {
         name: "Next.js",
@@ -277,19 +193,51 @@ export const projects: Project[] = [
         color: "bg-black text-white dark:bg-white dark:text-black",
       },
       {
-        name: "Contentful",
-        icon: "📝",
+        name: "Node.js",
+        icon: "🟢",
+        color:
+          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+      },
+      {
+        name: "MongoDB",
+        icon: "🍃",
+        color:
+          "bg-green-100 text-green-800 dark:bg-blue-900 dark:text-blue-200",
+      },
+      {
+        name: "Stripe",
+        icon: "💳",
+        color:
+          "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
+      },
+      {
+        name: "Docker",
+        icon: "🐳",
         color: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
       },
+    ],
+    liveDemo: "#",
+    sourceCode: "#",
+    watchVideo: "#",
+  },
+  {
+    id: "wc-tool",
+    title: "Command-Line WC tool",
+    description:
+      "The wc (word count) tool reads a file and counts the number of lines, words, and bytes in the file. This project involves creating a custom version of the wc tool using Node.js.",
+    image: "/images/wc_tool_project.svg",
+    technologies: [
       {
-        name: "Markdown",
-        icon: "📄",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200",
+        name: "Node.js",
+        icon: "🟢",
+        color:
+          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
       },
       {
-        name: "Vercel",
-        icon: "▲",
-        color: "bg-black text-white dark:bg-white dark:text-black",
+        name: "JavaScript",
+        icon: "📜",
+        color:
+          "bg-white-100 text-yellow-800 dark:bg-white dark:text-yellow-800",
       },
     ],
     liveDemo: "#",

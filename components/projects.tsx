@@ -1,22 +1,28 @@
-"use client"
+"use client";
 
-import { projects, type Project } from "@/data/portfolio-data"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ExternalLink, Play, Code, ArrowRight } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { projects, type Project } from "@/data/portfolio-data";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink, Play, Code, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectsProps {
-  projectList?: Project[]
-  showAll?: boolean
-  maxProjects?: number
+  projectList?: Project[];
+  showAll?: boolean;
+  maxProjects?: number;
 }
 
-export default function Projects({ projectList = projects, showAll = false, maxProjects = 3 }: ProjectsProps) {
-  const displayedProjects = showAll ? projectList : projectList.slice(0, maxProjects)
-  const hasMoreProjects = projectList.length > maxProjects
+export default function Projects({
+  projectList = projects,
+  showAll = false,
+  maxProjects = 3,
+}: ProjectsProps) {
+  const displayedProjects = showAll
+    ? projectList
+    : projectList.slice(0, maxProjects);
+  const hasMoreProjects = projectList.length > maxProjects;
 
   const ProjectCard = ({ project }: { project: Project }) => (
     <Card className="bg-card border-border overflow-hidden group">
@@ -43,12 +49,18 @@ export default function Projects({ projectList = projects, showAll = false, maxP
         {/* Project Details */}
         <div className="p-4">
           <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-          <p className="text-muted-foreground mb-4 text-sm leading-relaxed line-clamp-3">{project.description}</p>
+          <p className="text-muted-foreground mb-4 text-sm leading-relaxed line-clamp-3">
+            {project.description}
+          </p>
 
           {/* Technology Badges */}
           <div className="flex flex-wrap gap-1 mb-4">
             {project.technologies.slice(0, 4).map((tech) => (
-              <Badge key={tech.name} variant="secondary" className={`text-xs ${tech.color}`}>
+              <Badge
+                key={tech.name}
+                variant="secondary"
+                className={`text-xs ${tech.color}`}
+              >
                 {tech.icon} {tech.name}
               </Badge>
             ))}
@@ -62,28 +74,45 @@ export default function Projects({ projectList = projects, showAll = false, maxP
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-2">
             {project.liveDemo && (
-              <Button size="sm" className="flex items-center gap-1 text-xs">
-                <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                DEMO
-              </Button>
+              <Link href={project.liveDemo}>
+                <Button
+                  size="sm"
+                  className="flex items-center gap-1 text-xs cursor-pointer"
+                >
+                  <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                  DEMO
+                </Button>
+              </Link>
             )}
             {project.sourceCode && (
-              <Button size="sm" variant="outline" className="flex items-center gap-1 text-xs bg-transparent">
-                <Code className="w-3 h-3" />
-                CODE
-              </Button>
+              <Link href={project.sourceCode}>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="flex items-center gap-1 text-xs bg-transparent cursor-pointer"
+                >
+                  <Code className="w-3 h-3" />
+                  CODE
+                </Button>
+              </Link>
             )}
             {project.watchVideo && (
-              <Button size="sm" variant="outline" className="flex items-center gap-1 text-xs bg-transparent">
-                <Play className="w-3 h-3" />
-                VIDEO
-              </Button>
+              <Link href={project.watchVideo}>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="flex items-center gap-1 text-xs bg-transparent cursor-pointer"
+                >
+                  <Play className="w-3 h-3" />
+                  VIDEO
+                </Button>
+              </Link>
             )}
           </div>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 
   return (
     <section id="projects" className="mb-16">
@@ -106,5 +135,5 @@ export default function Projects({ projectList = projects, showAll = false, maxP
         </div>
       )}
     </section>
-  )
+  );
 }
