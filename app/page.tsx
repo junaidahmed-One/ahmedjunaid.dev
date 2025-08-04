@@ -6,6 +6,7 @@ import WorkExperience from "@/components/work-experience";
 import StartupWorkSection from "@/components/startup-work";
 import Projects from "@/components/projects";
 import ThemeIndicator from "@/components/theme-indicator";
+import { socialLinks } from "@/data/links";
 
 export default function Portfolio() {
   return (
@@ -49,86 +50,52 @@ export default function Portfolio() {
               {/* Social Links */}
               <div className="flex flex-wrap gap-4 mb-6">
                 <Link
-                  href="#"
+                  href={socialLinks.githubLink}
                   className="flex items-center gap-2 text-sm hover:text-foreground/80"
                 >
-                  <Github className="w-4 h-4" />
-                  GitHub
+                  <Image
+                    src="/icons/github.svg"
+                    alt="github"
+                    width={24}
+                    height={24}
+                  />
+                  Github
                 </Link>
                 <Link
-                  href="#"
+                  href={socialLinks.twitterLink}
                   className="flex items-center gap-2 text-sm hover:text-foreground/80"
                 >
-                  <X className="w-4 h-4" />X
+                  <Image
+                    src="/icons/twitter.svg"
+                    alt="twitter"
+                    width={24}
+                    height={24}
+                  />
+                  X.com
                 </Link>
                 <Link
-                  href="#"
+                  href={socialLinks.linkedinLInk}
                   className="flex items-center gap-2 text-sm hover:text-foreground/80"
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <Image
+                    src="/icons/linkedin.svg"
+                    alt="linkedin"
+                    width={24}
+                    height={24}
+                  />
                   LinkedIn
                 </Link>
                 <Link
-                  href="#"
+                  href={socialLinks.instagramLink}
                   className="flex items-center gap-2 text-sm hover:text-foreground/80"
                 >
-                  <Instagram className="w-4 h-4" />
+                  <Image
+                    src="/icons/instagram.svg"
+                    alt="github"
+                    width={24}
+                    height={24}
+                  />
                   Instagram
-                </Link>
-              </div>
-
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  <Mail className="w-4 h-4" />
-                  Steam
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Unsplash
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Youtube
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Daily.dev
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  ProductHunt
-                </Link>
-              </div>
-
-              <div className="flex flex-wrap gap-4 mt-4">
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Stackoverflow
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Codewars
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-sm hover:text-foreground/80"
-                >
-                  Gitlab
                 </Link>
               </div>
             </div>
@@ -136,14 +103,14 @@ export default function Portfolio() {
             {/* Profile Picture */}
             <div className="flex justify-center lg:justify-center">
               <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=280&width=280&text=Profile"
+                    src="/images/pfprofile_picture.jpeg"
                     alt="Profile picture"
-                    width={280}
-                    height={280}
-                    className="rounded-full object-cover border-4 border-background shadow-2xl hover:scale-105 transition-transform duration-300"
+                    width={360}
+                    height={360}
+                    className="rounded-2xl object-cover border-4 border-background shadow-2xl hover:scale-105 transition-transform duration-300"
                     priority
                   />
                 </div>
@@ -177,22 +144,7 @@ export default function Portfolio() {
       <footer className="border-t py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between text-sm text-muted-foreground">
-            <div className="flex items-center gap-4">
-              <span>Built with:</span>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-red-500 rounded-full"></div>
-                <span>Sanity</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-black dark:bg-white rounded-full"></div>
-                <span>Next.js</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-black dark:bg-white rounded-full"></div>
-                <span>Vercel</span>
-              </div>
-            </div>
-            <div>Copyright © Your Name 2025. All rights Reserved</div>
+            <div>Copyright © Junaid Ahmed 2025. All rights Reserved</div>
           </div>
         </div>
       </footer>
