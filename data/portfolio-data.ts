@@ -60,7 +60,7 @@ export const workExperiences: WorkExperience[] = [
     position: "FullStack Developer",
     duration: "SEP 2024 - PRESENT",
     description:
-      "At Paydestat, as Full Stack Developer responsible for designing, developing, and maintaining scalable web applications across both frontend and backend systems.",
+      "At Accenture, as Full Stack Developer responsible for designing, developing, and maintaining scalable web applications across both frontend and backend systems.",
     logoUrl: "/icons/accenture_logo.svg",
     color: "from-yellow-400 to-orange-500",
   },

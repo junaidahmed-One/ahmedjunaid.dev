@@ -110,7 +110,7 @@ export default function BlogsPage() {
       <footer className="border-t py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between text-sm text-muted-foreground">
-            <div>Copyright © Junaid Ahmed 2025. All rights Reserved</div>
+            <div>Junaid Ahmed</div>
           </div>
         </div>
       </footer>
